@@ -8,7 +8,7 @@ setup(name='clairvoyance-lipnet',
       author_email='altakey@gmail.com',
       license='MIT',
       packages=[
-          'clairvoyance.lipnet',
+          'clairvoyance_lipnet',
           'lipnet',
           'lipnet.core',
           'lipnet.helpers',

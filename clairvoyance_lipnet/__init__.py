@@ -29,11 +29,11 @@ class Reader(clairvoyance.core.Reader):
         self._predict_greedy = config.predict_greedy
         self._predict_beam_width = config.predict_beam_width
         if config.predict_dictionary is None:
-            self._predict_dictionary = pkg_resources.resource_filename(__name__, os.path.join('..','..','common','dictionaries','{}.txt'.format(config.predict_dictionary_type)))
+            self._predict_dictionary = pkg_resources.resource_filename(__name__, os.path.join('..','common','dictionaries','{}.txt'.format(config.predict_dictionary_type)))
         else:
             self._predict_dictionary = config.predict_dictionary
         if config.weight_path is None:
-            self._weight_path = pkg_resources.resource_filename(__name__, os.path.join('..','..','evaluation','models','{}.h5'.format(config.weight_type)))
+            self._weight_path = pkg_resources.resource_filename(__name__, os.path.join('..','evaluation','models','{}.h5'.format(config.weight_type)))
         else:
             self._weight_path = config.weight_path
 
