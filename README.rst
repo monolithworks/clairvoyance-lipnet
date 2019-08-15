@@ -12,5 +12,5 @@ QUICKSTART
 
 .. code-block:: shell
 
-  $ pip install clairvoyance
-  $ pip install clairvoyance-lipnet
+  $ pip install git+https://github.com/monolithworks/clairvoyance
+  $ pip install git+https://github.com/monolithworks/clairvoyance-lipnet
